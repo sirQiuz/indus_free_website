@@ -1,0 +1,24 @@
+{
+  "name": "indus_free_website",
+  "version": "1.0.0",
+  "description": "pet-project with animation",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirQiuz/indus_free_website.git"
+  },
+  "author": "sirQiuz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sirQiuz/indus_free_website/issues"
+  },
+  "homepage": "https://github.com/sirQiuz/indus_free_website#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0"
+  }
+}
