@@ -2,56 +2,49 @@
     let header = document.querySelector(".header-js");
 
     function randomValue(min, max) {
-        return Math.floor(Math.random() * (max - min) + min) / 10;
+        return Math.floor(Math.random() * (max - min) + min);
     }
 
     function bubbleCreation() {
-        let bubblesArray = [], 
+        let bubblesArray = [],
             bubble;
-        for (let i = 0; i < 120; i++) {
-            // let extraSmallBubble;
-            // extraSmallBubble = document.createElement("div");
-            // extraSmallBubble.classList.add("bubble", "bubble--extra-small");
-            // extraSmallBubble.style.right = randomValue(1, 1000) + "%";
-            // extraSmallBubble.style.opacity = randomValue(3, 8);
-            // extraSmallBubble.style.animationName = "bubbleFlyAnimation";
-            // extraSmallBubble.style.animationDuration = randomValue(10, 150);
-            // extraSmallBubble.style.animationTimingFunction = "linear";
-            // extraSmallBubble.style.animationDelay = randomValue(10, 60);
-            // extraSmallBubble.style.animationIterationCount = "infinite";
-            // header.appendChild(extraSmallBubble);
-            // -----
+
+        for (let i = 0; i < 600; i++) {
             bubble = document.createElement("div");
             bubblesArray.push(bubble);
         }
 
-        let extraSmallBubbles = bubblesArray.splice(0,30);
-            extraSmallBubbles.forEach(function(element) {
+        bubblesArray.forEach(function (element, index) {
+            if (index < 15) {
+                element.classList.add("bubble", "bubble--extra-small");
+            } else if (150 <= index && index < 300) {
+                element.classList.add("bubble", "bubble--small");
+            } else if (300 <= index && index < 450) {
+                element.classList.add("bubble", "bubble--medium");
+            } else if (450 <= index && index < 600) {
+                element.classList.add("bubble", "bubble--large");
+            }
 
-            });
+            element.style.right = randomValue(1, 1000) / 10 + "%";
 
-
-        // for (let i = 0; i < 45; i++) {
-        //     let smallBubble;
-        //     smallBubble = document.createElement("div");
-        //     smallBubble.classList.add("bubble", "bubble--small");
-        //     header.appendChild(smallBubble);
-        // }
-
-        // for (let i = 0; i < 35; i++) {
-        //     let mediumBubble;
-        //     mediumBubble = document.createElement("div");
-        //     mediumBubble.classList.add("bubble", "bubble--medium");
-        //     header.appendChild(mediumBubble);
-        // }
-
-        // for (let i = 0; i < 35; i++) {
-        //     let largeBubble;
-        //     largeBubble = document.createElement("div");
-        //     largeBubble.classList.add("bubble", "bubble--large");
-        //     header.appendChild(largeBubble);
-        // }
+            element.animate(
+                [
+                    {
+                        transform: `translateY(${randomValue(15, -5) + 'px'})`,
+                        opacity: randomValue(3, 6) / 10
+                    },
+                    {
+                        transform: `translateY(${randomValue(-100, -700) + 'px'})`,
+                        opacity: 0
+                    }
+                ], 
+                    {
+                        duration: randomValue(10000, 30000),
+                        iterations: Infinity
+                    }
+            );
+            header.appendChild(element);
+        });
     }
     bubbleCreation();
-
 }());
