@@ -1,5 +1,5 @@
 (function () {
-    let header = document.querySelector(".header-js");
+    let header = document.querySelector(".home-banner-js");
 
     function randomValue(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
@@ -15,7 +15,7 @@
         }
 
         bubblesArray.forEach(function (element, index) {
-            if (index < 15) {
+            if (index < 150) {
                 element.classList.add("bubble", "bubble--extra-small");
             } else if (150 <= index && index < 300) {
                 element.classList.add("bubble", "bubble--small");
