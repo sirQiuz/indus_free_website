@@ -103,7 +103,7 @@ body {
   font-size: 14px;
 }
 
-.header {
+.home-banner {
   position: relative;
   z-index: 0;
   width: 100%;
@@ -118,7 +118,7 @@ body {
   color: #fff;
   overflow: hidden;
 }
-.header .header__background {
+.home-banner .home-banner__background {
   position: absolute;
   z-index: 0;
   width: 100%;
@@ -130,23 +130,23 @@ body {
   background-position: center;
   pointer-events: none;
 }
-.header .header__inner {
+.home-banner .home-banner__inner {
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.header .header__text-content {
+.home-banner .home-banner__text-content {
   margin-bottom: 98px;
 }
-.header .header__logo-wrapper {
+.home-banner .home-banner__logo-wrapper {
   text-align: center;
 }
-.header .header__logo {
+.home-banner .home-banner__logo {
   margin-bottom: 23px;
 }
-.header .header__phrase {
+.home-banner .home-banner__phrase {
   font-style: italic;
 }
 
