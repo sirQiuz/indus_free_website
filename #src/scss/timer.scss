@@ -1,0 +1,33 @@
+.timer {
+    display: flex;
+    justify-content: space-between;
+
+    .timer__counter {
+        padding-right: 111px;
+        padding-left: 111px;
+
+        &:first-child {
+            padding-left: 0px;
+        }
+
+        &:last-child {  
+            padding-right: 0px;
+        }
+    }
+
+    .timer__count {
+        display: block;
+        padding-bottom: 28px;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 60px;
+        letter-spacing: 4px;
+    }
+
+    .timer__text {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        color: #bbbbbb;
+    }
+}
