@@ -1,16 +1,16 @@
 .timer {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
 
     .timer__counter {
-        padding-right: 111px;
-        padding-left: 111px;
+        width: 25%;
 
         &:first-child {
             padding-left: 0px;
         }
 
-        &:last-child {  
+        &:last-child {
             padding-right: 0px;
         }
     }
@@ -29,5 +29,28 @@
         text-align: center;
         font-size: 16px;
         color: #bbbbbb;
+    }
+
+    @media (min-width: 560px) and (max-width: 1024px) {
+        .timer__counter {
+            padding-bottom: 10px;
+        }
+
+        .timer__count {
+            height: 80px;
+            padding-right: 15px;
+            padding-bottom: 0;
+            padding-left: 15px;
+            font-size: 40px;
+            line-height: 80px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+
+        .timer__counter {
+            width: 50%;
+        }
     }
 }
