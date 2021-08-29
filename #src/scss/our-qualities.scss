@@ -1,0 +1,111 @@
+.our-qualities {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-image: url("../img/pattern.png"), url("../img/img-2.jpg");
+    background-position: 0% 98.4px, 0%;
+    // background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+
+    .our-qualities__body {
+        display: flex;
+    }
+
+    .our-qualities__block {
+        width: 33%;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        &:hover .icon-border::before {
+            transform: rotate(90deg);
+            background-color: #fff;
+        }
+
+        &:hover .icon::before {
+            color: #444;
+        }
+    }
+
+    .icon-wrapper {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .icon-border {
+        position: relative;
+        width: 80px;
+        height: 80px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: 80px;
+            border: 3px solid #fff;
+            border-radius: 3px;
+            transform: rotate(45deg);
+            transition: all .6s ease;
+        }
+    }
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 32px;
+        line-height: 1;
+        font-family: "et-line";
+
+        &::before {
+            position: absolute;
+            width: 22px;
+            height: 32px;
+            top: 50%;
+            left: 50%;
+            transform: skew(15deg) translate(-50%, -50%);
+            transition: all .6s ease;
+        }
+    }
+
+    .icon-lightbulb::before {
+        content: "\e030";
+    }
+
+    .icon-ribbon::before {
+        content: "\e01e";
+        transform: skew(15deg) translate(-58%, -50%);
+    }
+
+    .icon-circle-compass::before {
+        content: "\e038";
+    }
+
+    .our-qualitites__title {
+        padding-top: 30px;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .our-qualities__description {
+        padding-top: 10px;
+        color: #bbb;
+    }
+
+    @media (max-width: 992px) {
+        .our-qualities__body {
+            flex-direction: column;
+        }
+
+        .our-qualities__block {
+            width: 100%;
+            padding-top: 50px;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
