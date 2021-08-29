@@ -26,12 +26,12 @@
             }
 
             element.style.right = randomValue(1, 1000) / 10 + "%";
-
+            
             element.animate(
                 [
                     {
                         transform: `translateY(${randomValue(15, -5) + 'px'})`,
-                        opacity: randomValue(3, 6) / 10
+                        opacity: randomValue(3, 5) / 10
                     },
                     {
                         transform: `translateY(${randomValue(-100, -700) + 'px'})`,
@@ -40,10 +40,12 @@
                 ], 
                     {
                         duration: randomValue(10000, 30000),
-                        iterations: Infinity
+                        iterations: Infinity,
+                        delay: randomValue(300, 2000)
                     }
             );
             header.appendChild(element);
+            
         });
     }
     bubbleCreation();

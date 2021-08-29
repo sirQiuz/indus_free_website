@@ -208,7 +208,7 @@ body {
 .bubble {
   position: absolute;
   z-index: 1;
-  bottom: 0;
+  bottom: -10px;
   border-radius: 100%;
   background-color: #fff;
 }
