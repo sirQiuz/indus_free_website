@@ -6,7 +6,6 @@
         width: 100%;
         max-width: 555px;
         margin: 0 auto;
-        color: #333;
         text-align: center;
     }
 
@@ -48,14 +47,6 @@
 
     .news-letter__submit {
         width: 88px;
-        height: 100%;
-        color: #fff;
-        font-size: 14px;
-        background-color: #000;
-
-        &:hover {
-            cursor: pointer;
-            background-color: #3a3939;
-        }
+        height: 38px;
     }
 }

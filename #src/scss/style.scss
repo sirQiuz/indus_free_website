@@ -8,14 +8,19 @@ body {
     color: #fff;
 }
 
-h4, .h5, .h6, h4, h5, h6 {
+h3, h4, .h5, .h6 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
+@import "submit-button";
+@import "entry-field";
+@import "section";
 @import "container";
 @import "home-banner";
 @import "timer";
 @import "bubbles";
 @import "news-letter";
 @import "our-qualities";
+@import "contact";
+

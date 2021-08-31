@@ -1,0 +1,22 @@
+.entry-field {
+    width: 100%;
+    padding-left: 15px;
+    border: 1px solid #767676;
+    border-radius: 2px;
+    font-size: 15px;
+
+    &[type=text],
+    &[type=password],
+    &[type=number],
+    &[type=email] {
+        height: 46px;
+    }
+
+
+    &.textarea {
+        width: inherit;
+        padding-top: 15px;
+        resize: none;
+        line-height: 2;
+    }
+}

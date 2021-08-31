@@ -3,7 +3,6 @@
     padding-bottom: 80px;
     background-image: url("../img/pattern.png"), url("../img/img-2.jpg");
     background-position: 0% 98.4px, 0%;
-    // background-size: auto, cover;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed;
     text-align: center;
@@ -93,7 +92,6 @@
 
     .our-qualities__description {
         padding-top: 10px;
-        color: #bbb;
     }
 
     @media (max-width: 992px) {

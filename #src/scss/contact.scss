@@ -1,0 +1,110 @@
+.contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .contact__text-content {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .contact__body .contact__text-content .contact__title {
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .line-separator-wrapper {
+        position: relative;
+        margin-bottom: 20px;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 49px;
+            height: 2px;
+            background-color: #000;
+            transform: translate(-50%, -50%);
+        }
+
+        &::before {
+            left: calc(50% - 35px);
+        }
+
+        &::after {
+            left: calc(50% + 35px);
+        }
+    }
+
+    .line-separator {
+        width: 17px;
+        height: 17px;
+        margin: 0 auto;
+        border: 2px solid #000;
+        transform: rotate(45deg);
+    }
+
+    .contact__body .contact__text-content .contact__description {
+        font-size: 16px;
+        color: #534F4F;
+    }
+
+    .contact__form {
+        width: 100%;
+        max-width: 760px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: right;
+        font-size: 0;
+    }
+
+    .contact__input {
+        max-width: 360px;
+        margin-right: 28px;
+        margin-bottom: 20px;
+        font-size: 15px;
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+
+    .contact__textarea {
+        width: 100%;
+        max-width: 750px;
+        height: 170px;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+    }
+
+    .contact__submit {
+        left: 0;
+        width: 118px;
+        border-radius: 2px;
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .contact__form {
+            max-width: 616px;
+        }
+
+        .contact__input{
+            max-width: 294px;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .contact__form {
+            max-width: 720px;
+        }
+
+        .contact__input {
+            max-width: unset;
+            margin-right: 0;
+        }
+    }
+}

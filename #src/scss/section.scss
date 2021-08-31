@@ -1,0 +1,17 @@
+.section {
+    &.section--dark {
+        h3, h4, h5, h6 {
+            color: #fff;
+        }
+
+        p, span, div {
+            color: #bbb;
+        }
+    }
+
+    &.section--light {
+        h3, h4, h5, h6, p, span, div {
+            color: #333;
+        }
+    }
+}

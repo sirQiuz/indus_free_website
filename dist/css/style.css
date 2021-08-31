@@ -105,9 +105,47 @@ body {
   color: #fff;
 }
 
-h4, .h5, .h6, h4, h5, h6 {
+h3, h4, .h5, .h6 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.submit {
+  height: 34px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #000;
+}
+.submit:hover {
+  cursor: pointer;
+  background-color: #3a3939;
+}
+
+.entry-field {
+  width: 100%;
+  padding-left: 15px;
+  border: 1px solid #767676;
+  border-radius: 2px;
+  font-size: 15px;
+}
+.entry-field[type=text], .entry-field[type=password], .entry-field[type=number], .entry-field[type=email] {
+  height: 46px;
+}
+.entry-field.textarea {
+  width: inherit;
+  padding-top: 15px;
+  resize: none;
+  line-height: 2;
+}
+
+.section.section--dark h3, .section.section--dark h4, .section.section--dark h5, .section.section--dark h6 {
+  color: #fff;
+}
+.section.section--dark p, .section.section--dark span, .section.section--dark div {
+  color: #bbb;
+}
+.section.section--light h3, .section.section--light h4, .section.section--light h5, .section.section--light h6, .section.section--light p, .section.section--light span, .section.section--light div {
+  color: #333;
 }
 
 .container {
@@ -118,17 +156,17 @@ h4, .h5, .h6, h4, h5, h6 {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    max-width: 750px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    max-width: 970px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    max-width: 1170px;
   }
 }
 
@@ -266,7 +304,6 @@ h4, .h5, .h6, h4, h5, h6 {
   width: 100%;
   max-width: 555px;
   margin: 0 auto;
-  color: #333;
   text-align: center;
 }
 .news-letter .news-letter__title strong {
@@ -302,14 +339,7 @@ h4, .h5, .h6, h4, h5, h6 {
 }
 .news-letter .news-letter__submit {
   width: 88px;
-  height: 100%;
-  color: #fff;
-  font-size: 14px;
-  background-color: #000;
-}
-.news-letter .news-letter__submit:hover {
-  cursor: pointer;
-  background-color: #3a3939;
+  height: 38px;
 }
 
 .our-qualities {
@@ -393,7 +423,6 @@ h4, .h5, .h6, h4, h5, h6 {
 }
 .our-qualities .our-qualities__description {
   padding-top: 10px;
-  color: #bbb;
 }
 @media (max-width: 992px) {
   .our-qualities .our-qualities__body {
@@ -404,5 +433,98 @@ h4, .h5, .h6, h4, h5, h6 {
     padding-top: 50px;
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+.contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.contact .contact__text-content {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.contact .contact__body .contact__text-content .contact__title {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+}
+.contact .line-separator-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+.contact .line-separator-wrapper::before, .contact .line-separator-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 49px;
+  height: 2px;
+  background-color: #000;
+  transform: translate(-50%, -50%);
+}
+.contact .line-separator-wrapper::before {
+  left: calc(50% - 35px);
+}
+.contact .line-separator-wrapper::after {
+  left: calc(50% + 35px);
+}
+.contact .line-separator {
+  width: 17px;
+  height: 17px;
+  margin: 0 auto;
+  border: 2px solid #000;
+  transform: rotate(45deg);
+}
+.contact .contact__body .contact__text-content .contact__description {
+  font-size: 16px;
+  color: #534F4F;
+}
+.contact .contact__form {
+  width: 100%;
+  max-width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: right;
+  font-size: 0;
+}
+.contact .contact__input {
+  max-width: 360px;
+  margin-right: 28px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.contact .contact__input:nth-child(2n) {
+  margin-right: 0;
+}
+.contact .contact__textarea {
+  width: 100%;
+  max-width: 750px;
+  height: 170px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+.contact .contact__submit {
+  left: 0;
+  width: 118px;
+  border-radius: 2px;
+  font-size: 14px;
+}
+@media screen and (max-width: 1200px) {
+  .contact .contact__form {
+    max-width: 616px;
+  }
+  .contact .contact__input {
+    max-width: 294px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contact .contact__form {
+    max-width: 720px;
+  }
+  .contact .contact__input {
+    max-width: unset;
+    margin-right: 0;
   }
 }
