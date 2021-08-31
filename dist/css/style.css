@@ -341,7 +341,7 @@ h3, h4, .h5, .h6 {
   background-image: url("../img/pattern.png");
 }
 .news-letter .news-letter__submit {
-  width: 88px;
+  width: 90px;
   height: 40px;
   font-weight: 700;
 }
@@ -518,7 +518,7 @@ h3, h4, .h5, .h6 {
 .contact .contact__submit {
   left: 0;
   width: 118px;
-  border-radius: 2px;
+  border-radius: 3px;
   font-size: 14px;
 }
 @media screen and (max-width: 1200px) {
@@ -537,4 +537,104 @@ h3, h4, .h5, .h6 {
     max-width: unset;
     margin-right: 0;
   }
+}
+
+.footer {
+  padding-bottom: 100px;
+}
+.footer .row {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  font-family: "FontAwesome";
+  font-size: 0;
+}
+.footer .social-icon {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 22px;
+  border: 2px solid;
+  transform: rotate(45deg);
+  transition: all 0.6s ease 0s;
+  font-size: 16px;
+}
+.footer .social-icon a {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  padding: 1px;
+}
+.footer .social-icon a:hover {
+  cursor: pointer;
+}
+.footer .social-icon::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.footer .facebook-icon {
+  border-color: #3b5998;
+  color: #3b5998;
+}
+.footer .facebook-icon::after {
+  content: "\f09a";
+}
+.footer .facebook-icon:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+.footer .twitter-icon {
+  border-color: #00aced;
+  color: #00aced;
+}
+.footer .twitter-icon::after {
+  content: "\f099";
+}
+.footer .twitter-icon:hover {
+  background-color: #00aced;
+  color: #fff;
+}
+.footer .tumblr-icon {
+  border-color: #32506d;
+  color: #32506d;
+}
+.footer .tumblr-icon::after {
+  content: "\f173";
+}
+.footer .tumblr-icon:hover {
+  background-color: #32506d;
+  color: #fff;
+}
+.footer .pinterest-icon {
+  border-color: #cb2027;
+  color: #cb2027;
+}
+.footer .pinterest-icon::after {
+  content: "\f0d2";
+}
+.footer .pinterest-icon:hover {
+  background-color: #cb2027;
+  color: #fff;
+}
+.footer .flickr-icon {
+  border-color: #ff0084;
+  color: #ff0084;
+}
+.footer .flickr-icon::after {
+  content: "\f16e";
+}
+.footer .flickr-icon:hover {
+  background-color: #ff0084;
+  color: #fff;
+}
+.footer .copyright {
+  padding-top: 10px;
 }

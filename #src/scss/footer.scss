@@ -1,0 +1,121 @@
+.footer {
+    padding-bottom: 100px;
+
+    .row {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        font-family: "FontAwesome";
+        font-size: 0;
+    }
+
+    .social-icon {
+        position: relative;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin-right: 22px;
+        border: 2px solid;
+        transform: rotate(45deg);
+        transition: all .6s ease 0s;
+        font-size: 16px;
+    }
+
+    .social-icon a {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        padding: 1px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .social-icon::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .facebook-icon {
+        border-color: #3b5998;
+        color: #3b5998;
+
+        &::after {
+            content: "\f09a";
+        }
+
+        &:hover {
+            background-color: #3b5998;
+            color: #fff;
+        }
+    }
+
+    .twitter-icon {
+        border-color: #00aced;
+        color: #00aced;
+
+        &::after {
+            content: "\f099";
+        }
+
+        &:hover {
+            background-color: #00aced;
+            color: #fff;
+        }
+    }
+
+    .tumblr-icon {
+        border-color: #32506d;
+        color: #32506d;
+
+        &::after {
+            content: "\f173";
+        }
+
+        &:hover {
+            background-color: #32506d;
+            color: #fff;
+        }
+    }
+
+    .pinterest-icon {
+        border-color: #cb2027;
+        color: #cb2027;
+
+        &::after {
+            content: "\f0d2";
+        }
+
+        &:hover {
+            background-color: #cb2027;
+            color: #fff;
+        }
+    }
+
+    .flickr-icon {
+        border-color: #ff0084;
+        color: #ff0084;
+
+        &::after {
+            content: "\f16e";
+        }
+
+        &:hover {
+            background-color: #ff0084;
+            color: #fff;
+        }
+    }
+
+    .copyright {
+        padding-top: 10px;
+    }
+}
