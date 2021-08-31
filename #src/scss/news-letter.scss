@@ -22,10 +22,9 @@
     .news-letter__inputs {
         display: flex;
         width: 100%;
-        max-width: 555px;
         height: 46px;
         margin: auto;
-        border: 4px solid #000;
+        border: 3px solid #000;
         border-radius: 2px;
         font-size: 0;
     }
@@ -37,7 +36,7 @@
         padding-left: 14px;
         font-size: 14px;
         font-family: "Roboto-Regular", sans-serif;
-        border-right: 4px solid #000;
+        border-right: 3px solid #000;
 
         &:focus {
             color: #fff;
@@ -47,6 +46,14 @@
 
     .news-letter__submit {
         width: 88px;
-        height: 38px;
+        height: 40px;
+        font-weight: 700;
+    }
+
+    @media screen and (max-width: 767px) {
+        .news-letter__body,
+        .news-letter__email {
+            max-width: 100%;
+        }
     }
 }

@@ -131,6 +131,10 @@ h3, h4, .h5, .h6 {
 .entry-field[type=text], .entry-field[type=password], .entry-field[type=number], .entry-field[type=email] {
   height: 46px;
 }
+.entry-field:focus {
+  border: 1px solid #000;
+  border-radius: 0px;
+}
 .entry-field.textarea {
   width: inherit;
   padding-top: 15px;
@@ -317,10 +321,9 @@ h3, h4, .h5, .h6 {
 .news-letter .news-letter__inputs {
   display: flex;
   width: 100%;
-  max-width: 555px;
   height: 46px;
   margin: auto;
-  border: 4px solid #000;
+  border: 3px solid #000;
   border-radius: 2px;
   font-size: 0;
 }
@@ -331,7 +334,7 @@ h3, h4, .h5, .h6 {
   padding-left: 14px;
   font-size: 14px;
   font-family: "Roboto-Regular", sans-serif;
-  border-right: 4px solid #000;
+  border-right: 3px solid #000;
 }
 .news-letter .news-letter__email:focus {
   color: #fff;
@@ -339,7 +342,14 @@ h3, h4, .h5, .h6 {
 }
 .news-letter .news-letter__submit {
   width: 88px;
-  height: 38px;
+  height: 40px;
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .news-letter .news-letter__body,
+.news-letter .news-letter__email {
+    max-width: 100%;
+  }
 }
 
 .our-qualities {
