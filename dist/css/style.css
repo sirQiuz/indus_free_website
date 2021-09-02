@@ -103,6 +103,11 @@ body {
   font-size: 14px;
   line-height: 1.4;
   color: #fff;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 h3, h4, .h5, .h6 {
@@ -654,4 +659,11 @@ h3, h4, .h5, .h6 {
 .loader.loader--vanished {
   opacity: 0;
   pointer-events: none;
+}
+
+.scrollbar {
+  position: absolute;
+  right: 0;
+  width: 7px;
+  background-color: #424242;
 }
