@@ -1,17 +1,25 @@
 @import "styles-reset";
 @import "fonts";
 
+html,
 body {
+    height: 100%;
     font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 1.4;
     color: #fff;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    
-    // &::-webkit-scrollbar {
-    //     display: none;
-    // }
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
 }
 
 h3, h4, .h5, .h6 {
