@@ -1,16 +1,12 @@
-// .scroll {
-//     position: absolute;
-//     right: 0;
-//     top: 0;
-//     width: 7px;
-//     height: 100vh;
-//     background-color: rebeccapurple;
+.simplebar-scrollbar {
 
-   
-// }
-.scrollbar {
-    position: absolute;
-    right: 0;
-    width: 7px;
-    background-color: rgb(66, 66, 66);
+    &:before {
+        background-color: rgb(66, 66, 66);
+        border-radius: 0;
+    }
+
+    &.simplebar-visible:before {
+        opacity: 1;
+        transition: opacity .1s linear;
+    }
 }
